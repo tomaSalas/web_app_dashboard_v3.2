@@ -1,0 +1,74 @@
+
+@import "./utilities/index";
+
+body {
+    margin: 0px;
+}
+
+.layout_page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1024px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(103, 107, 175);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    
+
+}
+
+.header_notification {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding: 5px;
+        span {
+            font-size: 1.3rem;
+            color: white;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            
+        }
+
+}
+
+.header_line {
+    width: 2px;
+    height: 45px;
+    background-color: rgb(189, 189, 189);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header_account {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding: 5px;
+
+        span {
+            font-size: 1.3rem;
+            color: white;
+
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            
+        }
+
+}
+
