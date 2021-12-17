@@ -1,0 +1,29 @@
+@import "../utilities/variables";
+
+.traffic-container {
+    grid-area: traffic;
+  }
+  
+  .traffic-headline {
+    margin: 30px 0px 7px 0px;
+  }
+  
+  .traffic-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .traffic-nav-link {
+    list-style-type: none;
+    padding: 5px 10px;
+  }
+   
+  .daily-traffic-graph {
+    grid-area: dailyTraffic;
+  }
+  
+  .mobile-users-chart {
+    grid-area: mobileTraffic;
+  }

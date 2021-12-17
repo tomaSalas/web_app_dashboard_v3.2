@@ -1,0 +1,44 @@
+@import "../utilities/variables";
+input[type="checkbox"].switch {
+	font-size: 16px;
+  appearance: none;
+	width: 80px;
+	height: 29px;
+	background: #f5f5f5;
+  color: white;
+  border: 2px solid #cccccc;
+	border-radius: 348px;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	transition: all .2s ease-in-out;
+  }
+  
+  input[type="checkbox"].switch:checked {
+	  background: $s-c;
+  }
+  
+  input[type="checkbox"].switch:after {
+    position: absolute;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 .25em rgba(0,0,0,.3);
+    transform: scale(.7);
+    left: 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  input[type="checkbox"].switch:checked:after {
+	  left: calc(100% - 1.5em);
+  }
+  
+  input[type="checkbox"].switch:checked:before {
+    content: 'ON';
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    font-size: 14px;
+  }

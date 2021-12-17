@@ -1,0 +1,46 @@
+.members__outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 70px;
+    height: auto;
+  }
+  
+  .members-text > a {
+    text-decoration: none;
+    color: $s-c;
+  }
+  
+  .members-text > p {
+    width: 283px;
+  }
+  
+  @import "../utilities/variables";
+  .members__date-or-time {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+    width: 280px;
+  }
+  
+  .no-bottom-border {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  
+  .new-members {
+    grid-area: newMembers;
+  }
+
+  .recent-activity {
+    grid-area: recentActivity;
+  }
+  
+  .carret-right {
+    display: none;
+  }

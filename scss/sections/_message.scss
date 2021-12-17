@@ -1,0 +1,88 @@
+.messaging-users__outer-container {
+    grid-area: messageUser;
+    display: flex;
+    flex-direction: column;
+  }  
+  
+  .form-field,
+  .form-area {
+    background-color: #f5f5f5;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .form-area {
+    height: 150px;
+  }
+  
+  .button-primary {
+    width: 100%;
+    height: 50px;
+    color:white;
+    background-color:$s-c ;
+    border-radius:  5px;
+    box-shadow: none;
+    border: 1px solid grey;
+    text-transform: uppercase;
+  }
+  
+  #send.button-primary {
+    margin-top: 10px;
+  }
+  
+  .settings {
+    grid-area: settings;
+    margin-bottom: 0px;
+  }
+  
+  .toggle-button__inner-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px 0px;
+  }
+  
+  .toggle-button__inner-container p {
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 200px;
+  }
+  
+  #save, #cancel {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+  }
+  
+  #save { margin-right: 7.5px; }
+  #cancel { margin-left: 7.5px; }
+  
+  .button-disabled {
+    background-color: #999999;
+    color: white;
+    border: 1px solid grey;
+    text-transform: uppercase;
+  }
+  
+  @import "../utilities/variables";
+  .settings-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .active {
+    background-color: #81c98f;
+    color: white;
+    border-radius: 20px;
+  }

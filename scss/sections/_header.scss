@@ -1,0 +1,111 @@
+@import "../utilities/variables";
+
+.body-grid-container {
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "navigation"
+      "main";
+  }
+  
+  .header-container {
+    grid-area: header;
+    background-color: $s-c;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__sub-container--left {
+    width: 35%;
+    padding-left: 10px;
+    font-size: 17px;
+  }
+  
+  .header__sub-container--right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+  }
+  
+  .header-image {
+    width: 38px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  
+  .header__vertical-line {
+    border-left: 1px solid rgb(179, 166, 209);
+    height: 40px;
+  }
+  
+  .navigation-container {
+    grid-area: navigation;
+    background-color: #4d4c72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navigation-container svg {
+    fill: white;
+    width: 50px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .main-container {
+    grid-area: main;
+  }
+  
+  .main__header {
+    grid-area: mainHeader;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  input[type="search"]#searchSite {
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 5px;
+    width: 155px;
+  }
+  
+  .alert-banner {
+    grid-area: alertBanner;
+    background-color: $s-c;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .alert-message {
+    flex: 1 1 auto;
+  }
+  
+  .alert-banner-close {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    font-size: 17px;
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+  }

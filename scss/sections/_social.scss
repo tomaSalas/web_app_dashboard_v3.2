@@ -1,0 +1,55 @@
+@import "../utilities/variables";
+.social-stats {
+    grid-area: social;
+    padding-bottom: 0;
+  }
+  
+  .social__outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .social__inner-container {
+    background-color: $p-c;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .social-image {
+    background-color: $s-c;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 20px 0px 20px 20px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    fill: white;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .social-text {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .social__colored-font {
+    color: #7477bf;
+    font-weight: 900;
+    font-size: 19px;
+    letter-spacing: 1.3px;
+  }
+  
+  .social__stat-numbers {
+    color: #777777;
+    font-size: 41px;
+    font-weight: 900;
+  }
